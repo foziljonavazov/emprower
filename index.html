@@ -10,6 +10,13 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <title>Emprower Card</title>
   </head>
   <body>
@@ -18,21 +25,57 @@
         Hear first hand how our product is helping those who need it the most
       </h1>
     </header>
-    
+
     <nav>
-      <a href="#">About Us</a>
-      <a href="#">Customer Stories</a>
-      <a href="#">Quiz</a>
-      <a href="#">Support</a>
+      <a
+        href="https://www.empower.com/about-us"
+        target="_blank"
+        rel="noopener noreferrer"
+        title="About Us"
+        aria-label="About Us"
+        >About Us</a
+      >
+      <a
+        href="https://www.empowersuite.com/en/references?srsltid=AfmBOorM8OnoPN_6yJCJqkTnjj7tniWm8Bl-JfoqvKKrEct75Y2ks8P_"
+        target="_blank"
+        rel="noopener noreferrer"
+        title="Customer Stories"
+        aria-label="Customer Stories"
+        >Customer Stories</a
+      >
+      <a
+        href="https://www.empower.com/landingpage/financial-confidence/?start"
+        target="_blank"
+        rel="noopener noreferrer"
+        title="Quiz"
+        aria-label="Quiz"
+        >Quiz</a
+      >
+      <a
+        href="https://www.empower.com/contact"
+        target="_blank"
+        rel="noopener noreferrer"
+        title="Support"
+        aria-label="Support"
+        >Support</a
+      >
     </nav>
 
     <div class="nav-select">
       <select id="navMenu">
         <option value="#">Menu</option>
-        <option value="#">About Us</option>
-        <option value="#">Customer Stories</option>
-        <option value="#">Quiz</option>
-        <option value="#">Support</option>
+        <option value="https://www.empower.com/about-us">About Us</option>
+        <option
+          value="https://www.empowersuite.com/en/references?srsltid=AfmBOorM8OnoPN_6yJCJqkTnjj7tniWm8Bl-JfoqvKKrEct75Y2ks8P_"
+        >
+          Customer Stories
+        </option>
+        <option
+          value="https://www.empower.com/landingpage/financial-confidence/?start"
+        >
+          Quiz
+        </option>
+        <option value="https://www.empower.com/contact">Support</option>
       </select>
     </div>
 
@@ -64,7 +107,51 @@
       </div>
     </main>
 
+    <section class="hero">
+      <div class="container">
+        <div class="hero-img">
+          <img src="./imgs/dollar and phones.webp" alt="dollar and phones" />
+        </div>
+        <div class="hero-txt">
+          <div class="hero-heading">
+            <h3>Helping people out with</h3>
+          </div>
+          <div class="hero-flip">over $500 million advanced</div>
+        </div>
+      </div>
+    </section>
 
+    <section class="stepOne">
+      <div class="container">
+        <h3>step 1</h3>
+        <h1>Choose your product</h1>
+        <div class="getStarted">
+          <div class="img">
+            <img
+              src="./imgs/cash-advavce-offer-screenshot.webp"
+              alt="cash-advavce-offer-screenshot"
+            />
+          </div>
+          <div class="txt">
+            <h3>Get started with</h3>
+            <h1>Empower Cash Advance*</h1>
+            <h5><i class="fa-solid fa-check"></i>Receive up to $250 today</h5>
+            <h5><i class="fa-solid fa-check"></i>No interest, no late fees, no credit checks</h5>
+            <h5><i class="fa-solid fa-check"></i>Instant delivery^</h5>
+          </div>
+          </div>
+        <div class="upGrade">
+          <div class="img">
+            <img src="./imgs/emprower-thrive-screenshot.webp" alt="emprower-thrive-screenshot">
+          </div>
+          <div class="txt">
+              <h3>THEN upgrade to</h3>
+              <h1>Empower Thrive*</h1>
+              <span>coming soon</span>
+          </div>
+        </div>
+      </div>
+    </section>
     <script src="./script.js"></script>
   </body>
 </html>
