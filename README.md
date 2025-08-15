@@ -1,27 +1,24 @@
 # emprower
 
-**emprower** — bu loyiha zamonaviy veb sahifani yaratish uchun mo‘ljallangan. Loyihaning asosiy texnologiyalari: CSS, HTML va JavaScript.
+**emprower** — zamonaviy va responsiv veb sahifalar uchun tayyorlangan bepul shablon. Loyiha HTML, CSS va JavaScript asosida qurilgan bo‘lib, minimalist va tezkor dizaynni taqdim etadi.
+
+Demo: [https://emprower.netlify.app](https://emprower.netlify.app)
 
 ## Xususiyatlari
 
 - Toza va zamonaviy dizayn
-- Moslashuvchan (responsive) layout
-- Minimal JavaScript ishlatilgan
-- SEO uchun optimallashtirilgan meta teglar
+- To‘liq responsiv (barcha qurilmalarda mos ishlaydi)
+- HTML5 & CSS3 asosida yaratilgan
+- Minimal va oson o‘zgartiriladigan kod
+- Foydalanuvchi uchun qulay interfeys
 
-## Foydalanish
+## Boshlash
 
 1. Loyihani klonlang:
-    ```bash
-    git clone https://github.com/foziljonavazov/emprower.git
-    ```
-2. Fayllarni lokal serveringizda ishga tushiring yoki `index.html` faylini brauzerda oching.
-
-## Texnologiyalar
-
-- **HTML5**
-- **CSS3**
-- **JavaScript (minimal)**
+   ```bash
+   git clone https://github.com/foziljonavazov/emprower.git
+   ```
+2. Fayllarni o‘zingizga qulay lokal serverda ishga tushiring yoki `index.html` faylini bevosita brauzerda oching.
 
 ## Loyiha tuzilmasi
 
@@ -34,10 +31,9 @@ emprower/
 └─ README.md
 ```
 
-
 ## Hissa qo‘shish
 
-Taklif va xatoliklar uchun pull request va issue’larni kutib qolamiz!
+Taklif yoki xatoliklar uchun issue yoki pull request qoldirishingiz mumkin.
 
 ## Litsenziya
 
@@ -45,4 +41,4 @@ MIT
 
 ---
 
-**Muallif**: [foziljonavazov](https://github.com/foziljonavazov)
+**Muallif:** [foziljonavazov](https://github.com/foziljonavazov)
