@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -17,7 +18,45 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <title>Emprower Card</title>
+    <link
+      rel="shortcut icon"
+      href="./icons/WhiteLogoStacked.webp"
+      type="image/x-icon"
+    />
+    <title>Emprower</title>
+
+    <meta
+      name="description"
+      content="emprower — zamonaviy va moslashuvchan veb sahifa uchun tayyor shablon. HTML, CSS va JavaScript asosida."
+    />
+
+    <!-- Open Graph (Facebook va boshqalar uchun) -->
+    <meta property="og:title" content="emprower - Zamonaviy veb sahifa" />
+    <meta
+      property="og:description"
+      content="emprower — zamonaviy va moslashuvchan veb sahifa uchun tayyor shablon. HTML, CSS va JavaScript asosida."
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://github.com/foziljonavazov/emprower"
+    />
+    <meta
+      property="og:image"
+      content="https://github.com/foziljonavazov/emprower/icons/WhiteLogoStacked.webp"
+    />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="emprower - Zamonaviy veb sahifa" />
+    <meta
+      name="twitter:description"
+      content="emprower — zamonaviy va moslashuvchan veb sahifa uchun tayyor shablon. HTML, CSS va JavaScript asosida."
+    />
+    <meta
+      name="twitter:image"
+      content="https://github.com/foziljonavazov/emprower/icons/WhiteLogoStacked.webp"
+    />
   </head>
   <body>
     <header>
@@ -87,8 +126,17 @@
             Think the credit system is stacked against you? So do we. We'll help
             you get the credit you deserve.
           </h3>
-          <form action="">
-            <input type="email" name="email" id="email" class="inp-email" />
+          <form
+            action=""
+            onsubmit="alert('Thank you for using our app. We will contact you in a few seconds.')"
+          >
+            <input
+              type="email"
+              name="email"
+              id="email"
+              class="inp-email"
+              required
+            />
             <input type="submit" value="GET APP" />
           </form>
           <p>
@@ -108,7 +156,7 @@
     </main>
 
     <section class="hero">
-      <div class="container">
+      <div class="container" data-aos="fade-up" data-aos-duration="3000">
         <div class="hero-img">
           <img src="./imgs/dollar and phones.webp" alt="dollar and phones" />
         </div>
@@ -121,37 +169,414 @@
       </div>
     </section>
 
-    <section class="stepOne">
-      <div class="container">
-        <h3>step 1</h3>
-        <h1>Choose your product</h1>
-        <div class="getStarted">
-          <div class="img">
-            <img
-              src="./imgs/cash-advavce-offer-screenshot.webp"
-              alt="cash-advavce-offer-screenshot"
-            />
-          </div>
-          <div class="txt">
+    <section class="step-one" data-aos="fade-up" data-aos-duration="3000">
+      <h3>Step 1</h3>
+      <h1>Choose your product</h1>
+      <div class="cards">
+        <!-- Card 1 -->
+        <div class="card">
+          <img
+            src="./imgs/cash-advavce-offer-screenshot.webp"
+            alt="Cash Advance"
+          />
+          <div class="content">
             <h3>Get started with</h3>
             <h1>Empower Cash Advance*</h1>
-            <h5><i class="fa-solid fa-check"></i>Receive up to $250 today</h5>
-            <h5><i class="fa-solid fa-check"></i>No interest, no late fees, no credit checks</h5>
-            <h5><i class="fa-solid fa-check"></i>Instant delivery^</h5>
+            <ul>
+              <li>
+                <i class="fa-solid fa-check"></i> Receive up to $250 today
+              </li>
+              <li>
+                <i class="fa-solid fa-check"></i> No interest, no late fees, no
+                credit checks
+              </li>
+              <li><i class="fa-solid fa-check"></i> Instant delivery^</li>
+            </ul>
           </div>
-          </div>
-        <div class="upGrade">
-          <div class="img">
-            <img src="./imgs/emprower-thrive-screenshot.webp" alt="emprower-thrive-screenshot">
-          </div>
-          <div class="txt">
-              <h3>THEN upgrade to</h3>
-              <h1>Empower Thrive*</h1>
-              <span>coming soon</span>
+        </div>
+        <!-- Card 2 -->
+        <div class="card">
+          <img
+            src="./imgs/emprower-thrive-screenshot.webp"
+            alt="Empower Thrive"
+          />
+          <div class="content">
+            <h3>Then upgrade to</h3>
+            <h1>Empower Thrive*</h1>
+            <span class="tooltip">coming soon</span>
+            <ul>
+              <li>
+                <i class="fa-solid fa-check"></i> Start with $200 credit line &
+                grow to $1,000
+              </li>
+              <li>
+                <i class="fa-solid fa-check"></i> Enjoy 0% APR†
+                <span class="note"
+                  >when you pay by next paycheck, otherwise 35.99% APR</span
+                >
+              </li>
+              <li><i class="fa-solid fa-check"></i> Build credit over time‡</li>
+            </ul>
+            <button>Read More</button>
           </div>
         </div>
       </div>
     </section>
+
+    <section class="step-two" data-aos="fade-up" data-aos-duration="3000">
+      <h3>Step 2</h3>
+      <h1>Choose where to deposit your cash</h1>
+      <div class="cards">
+        <div class="card">
+          <img src="./imgs/visa-cards.webp" alt="Visa Cards" />
+          <div class="content">
+            <span class="tooltip">RECOMMENDED</span>
+            <h1>Empower Card</h1>
+            <p>
+              Open a debit card account through Empower with no overdraft fees
+            </p>
+            <ul>
+              <li>
+                <i class="fa-solid fa-check"></i> Get free instant delivery of
+                your Empower Cash Advance
+              </li>
+              <li>
+                <i class="fa-solid fa-check"></i> Get paid up to 2 days faster**
+              </li>
+              <li>
+                <i class="fa-solid fa-check"></i> Score cashback up to 10%^^
+              </li>
+            </ul>
+            <button>Read More</button>
+          </div>
+        </div>
+        <div class="card">
+          <img src="./imgs/claster.webp" alt="Claster" />
+          <div class="content">
+            <h1>External Checking Account</h1>
+            <p>
+              Keep your current bank and have your Empower Cash Advance or
+              Empower Thrive funds deposited to your primary bank account.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="hero" data-aos="fade-up" data-aos-duration="3000">
+      <div class="container">
+        <div class="hero-img">
+          <img src="./imgs/pocket.webp" alt="Pocket" />
+        </div>
+        <div class="hero-txt" id="hero-txt">
+          <div class="hero-title">
+            <h2>APPLE</h2>
+            <p>New Apps We Love</p>
+            <h2>TIME</h2>
+            <p>Best Apps of the Year</p>
+            <h2>REAL SIMPLE</h2>
+            <p>Smart Money Award</p>
+          </div>
+          <div class="hero-rating">
+            <img
+              src="./imgs/app-store-rating.webp"
+              alt="App Store Rating - 4.8 (55,000 reviews)"
+              onclick="window.open('https://www.apple.com/app-store/', '_blank')"
+            />
+            <img
+              src="./imgs/play-market-rating.webp"
+              alt="Play Market Rating - 4.7 (52,000 reviews)"
+              onclick="window.open('https://play.google.com/store/', '_blank')"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="testimonial-section" data-aos="fade-up" data-aos-duration="3000">
+      <div class="container"></div>
+      <h1>Giving credit where credit’s due</h1>
+      <div class="carousel">
+        <div class="carousel-inner">
+          <!-- Slide 1 -->
+          <div class="carousel-item active">
+            <div class="card">
+              <h3>"Empower Thrive has been amazing since day one."</h3>
+              <br /><span> Roberto V.</span>
+            </div>
+            <div class="card">
+              <h3>"Empower Thrive got me through a tough spot."</h3>
+              <br /><span> Demarcus O.</span>
+            </div>
+            <div class="card">
+              <h3>
+                "Empower Thrive gave me the money I needed when I needed it.
+                Quick and easy."
+              </h3>
+              <br /><span> Sanika S.</span>
+            </div>
+          </div>
+          <!-- Slide 2 -->
+          <div class="carousel-item">
+            <div class="card">
+              <h3>"They really care about customers' success and growth."</h3>
+              <br /><span> Alicia R.</span>
+            </div>
+            <div class="card">
+              <h3>"Quick approval and hassle-free process. Love it!"</h3>
+              <br /><span> Jamal T.</span>
+            </div>
+            <div class="card">
+              <h3>"Empower Thrive truly changed my financial situation."</h3>
+              <br /><span> Hannah K.</span>
+            </div>
+          </div>
+          <!-- Slide 3 -->
+          <div class="carousel-item">
+            <div class="card">
+              <h3>"Fantastic experience, highly recommended to friends."</h3>
+              <br /><span> David G.</span>
+            </div>
+            <div class="card">
+              <h3>"Reliable, transparent and supportive at every step."</h3>
+              <br /><span> Maria P.</span>
+            </div>
+            <div class="card">
+              <h3>"The best financial service I’ve ever used."</h3>
+              <br /><span> Kevin L.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="dots">
+        <span class="dot active" data-slide="0"></span>
+        <span class="dot" data-slide="1"></span>
+        <span class="dot" data-slide="2"></span>
+      </div>
+    </section>
+
+    <div class="last" data-aos="fade-up" data-aos-duration="3000">
+      <h1>
+        We believe <br />
+        credit should <br />
+        be more <br />
+        fair
+      </h1>
+      <img src="./imgs/a-man.webp" alt="A Man" />
+    </div>
+
+    <footer class="footer-section">
+      <div class="footer-container">
+        <div class="footer-content">
+          <div class="footer-column disclaimer-column">
+            <p>
+              ® The Empower name and logos are trademarks and service marks
+              owned by Empower. The Empower trademark is used by Empower under
+              license from Empower. We do not claim any ownership rights to any
+              trademarks, service marks, or trade names through your access or
+              use of the Empower app or platform product or service.
+            </p>
+          </div>
+
+          <div class="footer-column">
+            <ul class="footer-links">
+              <li>
+                <a
+                  href="https://www.empower.com/about-us"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  title="About Us"
+                  aria-label="About Us"
+                  >About Us</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.empowersuite.com/en/references?srsltid=AfmBOorM8OnoPN_6yJCJqkTnjj7tniWm8Bl-JfoqvKKrEct75Y2ks8P_"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  title="Customer Stories"
+                  aria-label="Customer Stories"
+                  >Customer Stories</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.empower.com/landingpage/financial-confidence/?start"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  title="Quiz"
+                  aria-label="Quiz"
+                  >Quiz</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.empower.com/contact"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  title="Support"
+                  aria-label="Support"
+                  >Support</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <ul class="footer-links">
+              <li>
+                <a
+                  href="https://www.empower.com/legal"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Legal"
+                  >Legal</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.empower.com/terms"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Terms of Service"
+                  >Terms of Service</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.empower.com/privacy"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Privacy"
+                  >Privacy</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <ul class="footer-links">
+              <li>
+                <a
+                  href="http://tiktok.com/@empowertoday?lang=en"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="TikTok"
+                  >TikTok</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.instagram.com/officialempowertoday/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Instagram"
+                  >Instagram</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://x.com/empowertoday?lang=en"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Twitter"
+                  >Twitter</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-legal">
+          <p>
+            Empower is a financial technology company, not a bank. Banking
+            services provided by nbkc bank, Member FDIC. Empower Thrive provided
+            by FinWise Bank, Member FDIC. Empower charges an auto-recurring
+            monthly subscription fee of $8 (or the free 14-day free trial
+            concludes for first-time customers, and (ii) immediately for
+            customers returning for a second or subsequent subscription.
+          </p>
+
+          <p>
+            * Eligibility requirements apply. Opening an Empower Thrive line of
+            credit restricts access to Empower Cash Advance, with access
+            restricted until the Empower Thrive line of credit is closed and you
+            meet the eligibility requirements for Empower Cash Advance.
+          </p>
+
+          <p>
+            * For Empower Cash Advance, free instant delivery is available for
+            eligible Empower Card customers with an activated debit card. For
+            the Empower Thrive line of credit, there is a 5% fee if you choose
+            instant delivery.
+          </p>
+
+          <p>
+            † The Annual Percentage Rate is subject to change. An Empower Thrive
+            line of credit is subject to credit approval. There are no costs to
+            open an Empower Thrive line of credit. If you choose to pay your
+            draw in full on your next paycheck date, your rate will be 0% APR;
+            if you miss your payment, you will accrue interest at 35.99% APR and
+            may incur late fees. If you choose to pay your draw on a date other
+            than your next paycheck date, your rate will be 35.99% APR or
+            similar rate low.
+          </p>
+
+          <p>
+            ‡ We report your payments to the credit bureaus. Pay on time and
+            keep utilization low for the best potential benefit. Many factors
+            impact your credit score, and while making on-time payments and
+            keeping utilization low may improve your score, there is no
+            guarantee this will improve your score.
+          </p>
+
+          <p>
+            ** Early access to paycheck deposit funds depends on the timing of
+            the employer's submission of deposits. We generally post such
+            deposits on the day they are received which may be up to 2 days
+            earlier than the employer's scheduled payment date.
+          </p>
+
+          <p>
+            ^^ Cashback deals on Empower Card purchases, including categories,
+            merchants and percentages, will vary and must be selected in the
+            app. Cashback will be applied automatically when the final
+            transaction posts, which may be up to a week after the qualifying
+            purchase.
+          </p>
+
+          <p>
+            Empower Cash Advance is not a payday loan or personal loan. Empower
+            Cash Advance charges no interest or late fees. It's just your money
+            coming to you before payday.
+          </p>
+
+          <p>
+            Any balances you hold with nbkc bank, including but not limited to
+            those balances held in Empower accounts, are added together and are
+            insured up to $250,000 per depositor through nbkc bank, Member FDIC,
+            not per account. Funds held in Empower accounts may be placed into
+            and held beneficially in your name at other depository institutions
+            where funds may be placed. Please visit
+            <a href="https://www.fdic.gov/resources/deposit-insurance/"
+              >https://www.fdic.gov/resources/deposit-insurance/</a
+            >
+            for a complete list of other depository institutions where funds may
+            be placed. Please visit nbkc.com/deposit-account-agreement for the
+            Deposit Account Documentation. Additional information on FDIC
+            insurance can be found at
+            <a href="https://www.fdic.gov/resources/deposit-insurance/"
+              >https://www.fdic.gov/resources/deposit-insurance/</a
+            >
+          </p>
+        </div>
+      </div>
+    </footer>
     <script src="./script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
